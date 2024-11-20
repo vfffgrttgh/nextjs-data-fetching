@@ -1,7 +1,7 @@
 'use server'
 
 export default async function Home() {
-  const data = await (await fetch('https://jsonplaceholder.typicode.com/todos')).json();
+  const data: any[] = await (await fetch('https://jsonplaceholder.typicode.com/todos')).json();
   return (
     <>
       <h1 className="text-center font-sans">Home</h1>
